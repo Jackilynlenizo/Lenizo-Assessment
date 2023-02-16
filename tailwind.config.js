@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'hero-image':'url("./components/assets/tanjiro.png")'
+      },
+    },
   },
   plugins: [],
 }
