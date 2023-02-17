@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Home/>
+      {/* <Discover/> */}
       <Routes>
-        <Route path='/' element={<Home/>}> </Route>
+        <Route path='/Home' element={<Home/>}> </Route>
         <Route path='about' element={<About/>}> </Route>
         <Route path='discover' element={<Discover/>}> </Route>
         <Route path='signup' element={<Signup/>}> </Route>
