@@ -5,8 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        'hero-image':'url("./components/assets/tanjiro.png")'
       },
     },
   },
