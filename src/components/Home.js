@@ -1,35 +1,36 @@
-import React from "react";
-import tanjiro from '../components/assets/tanjiro.png'
+import React from "react"
 import {MdStar} from 'react-icons/md'
-import { BsHeartFill } from 'react-icons/bs'
+import { BsHeartFill, BsPlayFill } from 'react-icons/bs'
+import { Hero } from "./Hero";
+
 export const Home = () => {
   return (
-    <div className="w-full h-screen scrollbar-hide relative">
-      <img src={tanjiro} alt='' className='w-full h-full object-cover'/>
-      <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-r from-black via-transparent to-black'></div>
-      
+    <div className=" w-full h-screen bg-neutral-900">
+      <Hero/>
+
       {/* Middle section */}
       <ul>
-        <div className='absolute w-full h-full flex flex-col top-10 justify-center text-left pl-11 text-white '>
-              <li className='text-7xl font-bold'>
+        <div className=' max-w-[1100px] absolute w-full h-full flex flex-col justify-center text-left top-11 pl-11 text-white'>
+              <div className='font-outfit text-8xl font-bold'>
                   Kimetsu no Yaiba
-              </li>
-              <ul className='py-4 flex items-center'>  
-                  <li className=' px-1'> <div className='text-yellow'> <MdStar/> </div></li>
-                  <li className=' text-sm'> 5.0 </li>
-                  <li className='text-xs pl-4' >Category: Adventure fiction, Dark fantasy, Martial Arts</li>
+              </div>
+              <ul className=' py-4 flex items-center'>  
+                  <div className=' px-1'> <div className='text-yellow'> <MdStar color="yellow" size={20} /> </div></div>
+                  <div className=' text-sm'> 5.0 </div>
+                  <div className='text-xs pl-4' >Category: Adventure fiction, Dark fantasy, Martial Arts</div>
               </ul>
-              <li className='mr-96 pb-1'>
-                  Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by <br/> Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer <br/> after his family was slaughtered and his younger sister Nezuko turned into a demon.
-              </li>
+              <p className=' font-outfit mr-96 pb-1 ite'>
+                  Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by
+                   Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer
+                   after his family was slaughtered and his younger sister Nezuko turned into a demon.
+              </p>
               <ul className='flex'>
-                  <li className='pr-2' > <button className=' rounded bg-blue-600 p-1 px-2'> Watch Now!</button></li>
-                  <li className=' w-9 items-center'><button className='border rounded p-2 flex items-center'> <BsHeartFill/></button> </li>
+                  <div className='pr-2 ' > <button className=' bg-blue-600'> <BsPlayFill/> Watch Now!</button></div>
+                  <div className=' items-center'><button className=' border py-2 px-3'> <BsHeartFill size={23}/></button> </div>
               </ul>
         </div>
       </ul>
-
-      {/* Hero Slider */}
+      
 
       
     </div>
