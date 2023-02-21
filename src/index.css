@@ -9,3 +9,12 @@
         @apply font-montserrat flex rounded p-1 py-2 px-2 items-center
     }
 }
+
+.scrollbar-hide::webkit-scrollbar{
+    displa:none;
+}
+
+.scrollbar-hide{
+    -ms-overflow-style:none;
+    srollbar-width:none;
+}
