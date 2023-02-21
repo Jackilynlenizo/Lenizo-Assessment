@@ -1,5 +1,6 @@
 import React from 'react'
-import {Expand} from './Expand'
+import {Expand1} from './Expand1'
+import {Expand2} from './Expand2'
 
 export const Trending = () => {
   return (
@@ -9,9 +10,9 @@ export const Trending = () => {
         <div className='flex overflow-auto scrollbar-hide'>
             <div className='flex items-center space-x-5'>
                 {/* CARDS */}
-                <Expand/>
-                <Expand/>
-                <Expand/>
+                <Expand1/>
+                <Expand2/>
+                <Expand1/>
             </div>
         </div>
 

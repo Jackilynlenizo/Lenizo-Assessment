@@ -6,7 +6,7 @@ import tb3 from "../components/assets/tb3.png";
 export const Throwback = () => {
   return (
         <div className=' pb-10 px-[90px] py-[10px] relative bgcolor'>
-            <h1 className=" font-outfit font-bold text-5xl py-3 text-white">
+            <h1 className=" font-outfit font-bold text-[34px] py-3 text-white">
             Throwback Anime!
           </h1>
 

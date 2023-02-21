@@ -1,11 +1,11 @@
 import React from 'react'
 import c1 from '../components/assets/aot.png'
 import img1 from '../components/assets/img1.png'
-import img2 from '../components/assets/img2.png'
+// import img2 from '../components/assets/img2.png'
 import img3 from '../components/assets/img3.png'
-import img4 from '../components/assets/img4.png'
+// import img4 from '../components/assets/img4.png'
 import img5 from '../components/assets/img5.png'
-import img6 from '../components/assets/img6.png'
+// import img6 from '../components/assets/img6.png'
 import {MdStar} from 'react-icons/md'
 
 export const Episodes = () => {

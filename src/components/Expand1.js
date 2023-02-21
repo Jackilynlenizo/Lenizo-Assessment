@@ -3,7 +3,7 @@ import {useState} from 'react'
 import Card  from "./Card1";
 import {Episodes} from "./Episodes"
 
-export const Expand = () => {
+export const Expand1 = () => {
 
     const [isOpen, setIsOpen] = useState(false)
    
