@@ -1,4 +1,4 @@
-import{Route, Routes} from 'react-router-dom'
+import{Route, Routes, Switch} from 'react-router-dom'
 import { About } from './components/About';
 import { Discover } from './components/Discover';
 import { Home } from './components/Home';
@@ -10,14 +10,14 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Home/>
-      <Discover/>
+      {/* <Home/>
+      <Discover/> */}
       <Routes>
-        <Route path='/Home' element={<Home/>}> </Route>
-        <Route path='about' element={<About/>}> </Route>
-        <Route path='discover' element={<Discover/>}> </Route>
-        <Route path='signup' element={<Signup/>}> </Route>
-        <Route path='login' element={<Login/>}> </Route>
+          <Route path='/' element={<Home/>}> </Route>
+          <Route path='about' element={<About/>}> </Route>
+          <Route path='discover' element={<Discover/>}> </Route>
+          <Route path='signup' element={<Signup/>}> </Route>
+          <Route path='login' element={<Login/>}> </Route>
       </Routes>
     </>
   );

@@ -3,7 +3,7 @@ import Card1 from './Card1'
 
 export const Trending = () => {
   return (
-  <div className='relative w-full pl-[90px] bg-[#1A1A1A]'>
+  <div className='relative w-full pl-[90px] bgcolor pb-5'>
         <h1 className="font-outfit font-bold text-[34px] text-white flex py-4 gap-2"> Trending <span className=" text-[#FBC94A]">this week </span>
         </h1>
 

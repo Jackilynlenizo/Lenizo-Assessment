@@ -1,12 +1,9 @@
 import React from "react";
-import { Trending } from "./Trending";
-import { Throwback } from "./Throwback";
 
 export const Discover = () => {
   return (
-      <div className ='bg-slate-600'>
-        <Trending/>
-        <Throwback/>
-    </div>
+    <div className='w-screen h-screen flex items-center justify-center bgcolor'>
+    <h1 className='text-5xl text-white'>Discover Page</h1>
+  </div>
   );
 };
