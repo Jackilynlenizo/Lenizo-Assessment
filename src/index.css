@@ -2,23 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&display=swap");
 
-@layer base{
-    button{
-        @apply font-montserrat flex rounded p-1 py-2 px-2 items-center
-    }
+@layer base {
+  button {
+    @apply font-montserrat flex rounded p-1 py-2 px-2 items-center;
+  }
 }
 
-.scrollbar-hide::webkit-scrollbar{
-    displa:none;
+.scrollbar-hide::webkit-scrollbar {
+  displa: none;
 }
 
-.scrollbar-hide{
-    -ms-overflow-style:none;
-    srollbar-width:none;
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  srollbar-width: none;
 }
 
-.bgcolor{
- background-color: #1A1A1A;
+.bgcolor {
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #106580;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a;
 }
