@@ -12,7 +12,7 @@ export const Episodes = () => {
 
   return (
 <div className=' pr-7 pb-5 z-50 bgcolor'>
-    <div className=' flex w-[1450px]'>
+    <div className=' flex w-[1430px]'>
         <div>
                 <button className='w-[600px] h-[621px] rounded-2xl relative '>
                         <img className='absolute w-full h-full bottom-0 left-0 right-0 rounded-2xl object-cover' src={img} alt=''/>

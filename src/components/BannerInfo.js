@@ -26,7 +26,7 @@ export const BannerInfo = () => {
               </div>
 
               <ul className='flex py-2'>
-                  <div className='pr-2' > <button className=' bg-[#106580]  font-normal font-montserrat'> <BsPlayFill/> Watch Now!</button></div>
+                  <div className='pr-2' > <button className=' bg-[#106580] font-normal font-montserrat hover:bg-white hover:text-[#106580]'> <BsPlayFill/> Watch Now!</button></div>
                   <div className=' items-center'><button className=' border py-2 px-3'> <BsHeartFill size={23}/></button> </div>
               </ul>
 
