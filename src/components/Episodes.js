@@ -1,5 +1,5 @@
 import React from 'react'
-import c1 from '../components/assets/aot.png'
+import img from '../components/assets/aot.png'
 import img1 from '../components/assets/img1.png'
 // import img2 from '../components/assets/img2.png'
 import img3 from '../components/assets/img3.png'
@@ -11,10 +11,11 @@ import {MdStar} from 'react-icons/md'
 export const Episodes = () => {
 
   return (
-    <div className='flex w-[1400px] pr-7 pb-5'>
+<div className='absolulte pr-7 pb-5 z-50 bgcolor'>
+    <div className=' flex w-[1450px]'>
         <div>
-                <button className='w-[516px] h-[621px] rounded-2xl relative '>
-                        <img className='absolute w-full h-full bottom-0 left-0 right-0 rounded-2xl object-cover' src={c1} alt=''/>
+                <button className='w-[600px] h-[621px] rounded-2xl relative '>
+                        <img className='absolute w-full h-full bottom-0 left-0 right-0 rounded-2xl object-cover' src={img} alt=''/>
                         <div className='absolute w-full h-full rounded-2xl bottom-0 left-0 right-0 bg-gradient-to-t from-black'></div>
                         
                     <div className='absolute text-white text-left z-30 bottom-2 w-full pr-5'> 
@@ -29,10 +30,11 @@ export const Episodes = () => {
                                     </ul>
                         </div>
                 </button>
-
-                <p className='w-[516px] text-white justify-center items-center py-2'>
-                When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…
-                </p>
+                <div className='w-[600px] text-white flex content-center items-center py-2'>
+                    <p className='px-4 text-justify'>
+                    When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…
+                    </p>
+                </div>
         </div>
 
         <div>
@@ -78,6 +80,7 @@ export const Episodes = () => {
         </div>
         </div>
 
+    </div>
     </div>
   )
 }

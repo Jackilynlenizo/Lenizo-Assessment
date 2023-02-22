@@ -10,11 +10,12 @@ export const Throwback = () => {
             Throwback Anime!
           </h1>
 
-          <div className="py-4 flex flex-col items-center">
-            <div className=" grid lg:grid-cols-3 align-middle">
-              <img src={tb2} alt="" className='p-3 w-[480px]'/>
-              <img src={tb3} alt="" className='p-3 w-[480px]'/>
-              <img src={tb1} alt="" className='p-3 w-[480px]'/>
+          <div className="py-4 items-center">
+            <div className=" grid lg:grid-cols-3 justify-center py-2 items-center align-middle bg-cover ">
+              
+              <img src={tb1} alt="" className='w-[409px] h-[427px] rounded-[30px] border-white border-[3px]'/>
+              <img src={tb2} alt="" className='w-[409px] h-[427px] rounded-[30px] border-white border-[3px]'/>
+              <img src={tb3} alt="" className='w-[409px] h-[427px] rounded-[30px] border-white border-[3px]'/>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ import { Signup } from './components/Signup';
  
 function App() {
   return (
-    <>
+    <div className='relative'>
       <Navbar/>
       <Routes>
           <Route path='/' element={<Home/>}> </Route>
@@ -17,7 +17,7 @@ function App() {
           <Route path='signup' element={<Signup/>}> </Route>
           <Route path='login' element={<Login/>}> </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

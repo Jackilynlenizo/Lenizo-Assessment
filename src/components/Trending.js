@@ -1,19 +1,32 @@
-import React from 'react'
-import {Expand1} from './Expand1'
-import {Expand2} from './Expand2'
+import React from "react";
+import { Card } from "./Card";
+import CardData from "./CardData";
+import { Throwback } from "./Throwback";
 
 export const Trending = () => {
+  const carddata = CardData.map((item) => {
+    return (
+      <Card
+        id={item.id}
+        img={item.img}
+        title={item.title}
+        rate={item.rate}
+        category={item.category}
+      />
+    );
+  });
+
   return (
-  <div className='relative w-full bgcolor pb-5'>
-        <h1 className="font-outfit font-bold text-[34px] pl-[90px] text-white flex py-4 gap-2"> Trending <span className=" text-[#FBC94A]">this week </span></h1>
+    <div className="relative z-0 top-0 bgcolor pb-5 h-inherit">
+      <h1 className="font-outfit font-bold text-[34px] pl-[90px] text-white flex py-4 gap-2">
+        Trending <span className=" text-[#FBC94A]">this week </span>
+      </h1>
 
-        <div className='flex items-center space-x-5 overflow-auto scrollbar-hide px-[90px] scroll-pl-[90px] snap-x'>
-                {/* CARDS */}
-                <Expand1/>
-                <Expand2/>
-                <Expand1/>
-         </div>
+      <div className="flex flex-nowrap z-0 items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] scroll-pl-[90px] snap-x">
+           {carddata}
+      </div>
 
-  </div>
-  )
-}
+      <Throwback/>   
+    </div>
+  );
+};
