@@ -11,7 +11,7 @@ import {MdStar} from 'react-icons/md'
 export const Episodes = () => {
 
   return (
-<div className='absolulte pr-7 pb-5 z-50 bgcolor'>
+<div className=' pr-7 pb-5 z-50 bgcolor'>
     <div className=' flex w-[1450px]'>
         <div>
                 <button className='w-[600px] h-[621px] rounded-2xl relative '>
