@@ -5,7 +5,7 @@ import {MdStar} from 'react-icons/md'
 export default function card1() {
   return (
     //CARDS
-    <button className='w-[600px] h-[337px] rounded-2xl overflow-hidden relative'>
+    <button className='w-[600px] h-[337px] snap-start rounded-2xl overflow-hidden relative hover:boshadow-[0 6px 10px 2px black] hover:shadow-[0_5px_10px_1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
             <img className='absolute w-full h-full bottom-0 left-0 right-0 bg-cover' src={c1} alt=''/>
             <div className='absolute w-full h-full rounded-2xl bottom-0 left-0 right-0 bg-gradient-to-t from-black'></div>
             

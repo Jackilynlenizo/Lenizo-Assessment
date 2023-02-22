@@ -29,11 +29,11 @@ export const BannerInfo = () => {
                   <div className=' items-center'><button className=' border py-2 px-3'> <BsHeartFill size={23}/></button> </div>
               </ul>
 
-              <div className=' z-10 text-white mt-24'>
+              <div className=' z-30 text-white mt-24'>
                 <ul className='font-outfit font-thin flex items-center space-x-5 pr-12 cursor-pointer'>
-                  <li className=''><NavLink to='/'>Overview</NavLink></li>
-                  <li className=' px-4'><NavLink to='/'>Episodes</NavLink></li>
-                  <li className='r'><NavLink to='/'>Details</NavLink></li>
+                  <li className='hover:font-bold hover:underline-offset-8 hover:underline z-30 hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/'>Overview</NavLink></li>
+                  <li className='hover:font-bold hover:underline-offset-8 hover:underline z-30 hover:decoration-4 hover:decoration-[#106580] px-4'><NavLink to='/'>Episodes</NavLink></li>
+                  <li className='hover:font-bold hover:underline-offset-8 hover:underline z-30 hover:decoration-4 hover:decoration-[#106580] '><NavLink to='/'>Details</NavLink></li>
                 </ul>
               </div>
         </div>

@@ -11,9 +11,9 @@ import {MdStar} from 'react-icons/md'
 export const Episodes = () => {
 
   return (
-    <div className=' flex w-full pr-7 pb-5'>
+    <div className='flex w-[1400px] pr-7 pb-5'>
         <div>
-                <button className='w-[516px] h-[621px] rounded-2xl relative'>
+                <button className='w-[516px] h-[621px] rounded-2xl relative '>
                         <img className='absolute w-full h-full bottom-0 left-0 right-0 rounded-2xl object-cover' src={c1} alt=''/>
                         <div className='absolute w-full h-full rounded-2xl bottom-0 left-0 right-0 bg-gradient-to-t from-black'></div>
                         
