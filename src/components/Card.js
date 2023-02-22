@@ -18,7 +18,7 @@ export const Card = (props) => {
             <img className='absolute w-full h-full bottom-0 left-0 right-0 bg-cover' src={`../CardImages/${props.img}`} alt=''/>
             <div className='absolute w-full h-full rounded-2xl bottom-0 left-0 right-0 bg-gradient-to-t from-black'></div>
             
-            <div className='absolute text-white text-left z-30 bottom-2 w-full pr-5 border-white'> 
+            <div className='absolute text-white text-left z-30 bottom-2 w-full px-5 border-white'> 
                         <div className=' font-outfit font-extrabold text-[24px]'>
                             {props.title}
                         </div>

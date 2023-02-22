@@ -2,7 +2,7 @@ export default [
   {
     key: 1,
     img: "aot.png",
-    title: "Attack of Titanssss",
+    title: "Attack of Titans",
     rate: "5.0",
     category: "Adventure fiction, Dark fantasy, Martial Arts",
   },
@@ -19,5 +19,19 @@ export default [
     title: "One Piece",
     rate: "5.0",
     category: "Adventure fiction, Comedy, Family",
+  },
+  {
+    key: 4,
+    img: "sl.png",
+    title: "Solo Leveling",
+    rate: "5.0",
+    category: "Action, Fantasy",
+  },
+  {
+    key:5 ,
+    img: "sxf.png",
+    title: "Spy x Family",
+    rate: "5.0",
+    category: "Action, Comedy, Spy",
   },
 ];
