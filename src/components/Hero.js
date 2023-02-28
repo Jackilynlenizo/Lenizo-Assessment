@@ -1,5 +1,5 @@
 import React from 'react'
-import kimetsu from '../components/assets/kimetsu.png'
+import kimetsu from '../assets/kimetsu.png'
 
 export const Hero = () => {
   return (

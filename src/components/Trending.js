@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "./Card";
-import CardData from "./CardData";
+import CardData from "../data/CardData";
 import { Throwback } from "./Throwback";
-import ThrowbackData from "./ThrowbackData";
+import ThrowbackData from "../data/ThrowbackData";
 
 export const Trending = () => {
   const carddata = CardData.map((item) => {

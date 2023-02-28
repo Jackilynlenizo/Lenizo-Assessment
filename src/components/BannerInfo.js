@@ -2,6 +2,7 @@ import React from 'react'
 import {MdStar} from 'react-icons/md'
 import { BsHeartFill, BsPlayFill } from 'react-icons/bs'
 import { NavLink } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 export const BannerInfo = () => {
   return (
@@ -26,8 +27,8 @@ export const BannerInfo = () => {
               </div>
 
               <ul className='flex py-2'>
-                  <div className='pr-2' > <button className=' bg-[#106580] font-normal font-montserrat hover:bg-white hover:text-[#106580]'> <BsPlayFill/> Watch Now!</button></div>
-                  <div className=' items-center'><button className=' border py-2 px-3'> <BsHeartFill size={23}/></button> </div>
+                  <div className='pr-2' > <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} className=' bg-[#106580] font-normal font-montserrat hover:bg-white hover:text-[#106580]'> <BsPlayFill/> Watch Now!</motion.button ></div>
+                  <div className=' items-center'><motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} className=' border py-2 px-3'> <BsHeartFill size={23}/></motion.button > </div>
               </ul>
 
               <div className='text-white mt-24'>
