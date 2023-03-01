@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export const BannerInfo = () => {
   return (
-    <div className=' absolute w-full h-full justify-center text-left top-[250px] px-[90px] text-white'>
+    <div className=' absolute w-full h-screen justify-center text-left mt-[-640px] px-[90px] flex flex-col text-white'>
               <div className=' font-outfit text-[80px] font-bold'>
                   Kimetsu no Yaiba
               </div>
@@ -17,14 +17,11 @@ export const BannerInfo = () => {
                   <div className=' font-normal pl-4' >Category: Adventure fiction, Dark fantasy, Martial Arts</div>
               </ul>
 
-              <div className="">
               <p className='flex max-w-[622px] font-outfit font-normal'>
                   Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by
-                   Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer
-                   after his family was slaughtered and his younger sister Nezuko turned into a demon.
+                  Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer
+                  after his family was slaughtered and his younger sister Nezuko turned into a demon.
               </p>
-
-              </div>
 
               <ul className='flex py-2'>
                   <div className='pr-2' > <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} className=' bg-[#106580] font-normal font-montserrat hover:bg-white hover:text-[#106580]'> <BsPlayFill/> Watch Now!</motion.button ></div>

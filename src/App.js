@@ -1,10 +1,11 @@
 import{Route, Routes} from 'react-router-dom'
-import { About } from './routes/About';
-import { Discover } from './routes/Discover';
-import { Home } from './routes/Home';
-import { Login } from './routes/Login';
+import { About } from './pages/About';
+import { Discover } from './pages/Discover';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
 import { Navbar } from './layout/Navbar';
-import { Signup } from './routes/Signup';
+import { Signup } from './pages/Signup';
+import {Anime} from './pages/Anime';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="login" element={<Login />}>
           {" "}
         </Route>
+        <Route path=":slug" element={<Anime/>}></Route>
       </Routes>
     </div>
   );

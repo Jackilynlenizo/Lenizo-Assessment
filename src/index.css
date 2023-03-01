@@ -10,17 +10,21 @@
   }
 }
 
+body{
+  background-color: #1a1a1a;
+}
+
+.bgcolor {
+  background-color: #1a1a1a;
+}
+
 .scrollbar-hide::webkit-scrollbar {
-  displa: none;
+  display: none;
 }
 
 .scrollbar-hide {
   -ms-overflow-style: none;
   srollbar-width: none;
-}
-
-.bgcolor {
-  background-color: #1a1a1a;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +33,7 @@
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  background: #1a1a1a;
+  //background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,5 +42,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a1a1a;
+  background: #FBC94A;
 }
