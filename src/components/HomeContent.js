@@ -4,12 +4,14 @@ import { Trending } from "./Trending";
 import TrendingData from "../data/TrendingData";
 import { Throwback } from "./Throwback";
 import ThrowbackData from "../data/ThrowbackData";
+import slugify from "react-slugify";
 
 export const HomeContent = () => {
   const trendingdata = TrendingData.map((item) => {
     return (
-      <Link to={`/${item.slug}`}><Trending
-        id={item.id}
+      <Link to={`${slugify(item.title)}`}><Trending
+        key={item.key}
+        id={item.key}
         img={item.img}
         title={item.title}
         rate={item.rate}

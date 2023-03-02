@@ -2,22 +2,25 @@ export default [
   {
     key: 1,
     slug: "attack-of-titans",
-    img: "aot.png",
-    title: "Attack of Titans",
+    img: "../CardImages/aot.png",
+    title: "Attack on Titans",
     rate: "5.0",
     category: "Adventure fiction, Dark fantasy, Martial Arts",
-    description: "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…",
+    description:
+      "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…",
     season: "1",
+    
   },
   {
     key: 2,
     slug: "jujutsu-kaisen",
-    img: "jk.png",
+    img: "../CardImages/jk.png",
     title: "Jujutsu Kaisen",
     rate: "5.0",
     category: "Adventure fiction,  Martial Arts",
-    description: "Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings.",
-    season:"1",
+    description:
+      "Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings.",
+    season: "1",
   },
   {
     key: 3,
@@ -40,7 +43,7 @@ export default [
     season: "1",
   },
   {
-    key:5,
+    key: 5,
     slug: "spy-x-family",
     img: "sxf.png",
     title: "Spy x Family",
