@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Trending } from "./Trending";
 import TrendingData from "../data/TrendingData";
@@ -7,7 +7,12 @@ import ThrowbackData from "../data/ThrowbackData";
 import slugify from "react-slugify";
 
 export const HomeContent = () => {
-  const trendingdata = TrendingData.map((item) => {
+  const [trSearch, setTrSearch] = useState("")
+  const [tbSearch, setTbSearch] = useState("")
+
+  const trendingdata = TrendingData.filter((item) => {
+    return trSearch.toLowerCase() === "" ? item: item.title.toLowerCase().includes(trSearch.toLowerCase())
+  }).map((item) => { 
     return (
       <Link to={`${slugify(item.title)}`}><Trending
         key={item.key}
@@ -20,11 +25,14 @@ export const HomeContent = () => {
     );
   });
 
-  const tbdata = ThrowbackData.map((item) => {
+  const tbdata = ThrowbackData.filter((item) => {
+    return tbSearch.toLowerCase() === "" ? item: item.title.toLowerCase().includes(tbSearch.toLowerCase())
+  }).map((item) => {
     return (
       <Throwback
         id={item.id}
         img={item.img}
+        title={item.title}
         alt={item.alt}
       />
     );
@@ -32,18 +40,24 @@ export const HomeContent = () => {
 
   return (
     <div className="relative top-0 bgcolor pb-5">
-      <h1 className="font-outfit font-bold text-[34px] pl-[90px] text-white flex py-4 gap-2">
-        Trending <span className=" text-[#FBC94A]">this week </span>
-      </h1>
+      <div className="flex justify-between items-center px-[90px]">
+        <h1 className="font-outfit font-bold text-[34px] text-white flex py-4 gap-2">
+          Trending <span className=" text-[#FBC94A]">this week </span>
+        </h1>
+        <input type="search" placeholder="Search Anime..." className="rounded-md pl-4" onChange={(e) => setTrSearch(e.target.value) }/>
+      </div>
 
-        <div className="flex flex-nowrap z-0 items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] py-4 scroll-pl-[90px] snap-x">
+        <div className="flex flex-nowrap items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] py-4 scroll-pl-[90px] snap-x">
            {trendingdata}
         </div>
 
       <div className=' pb-10 relative bgcolor'>
-          <h1 className=" px-[90px] font-outfit font-bold text-[34px] py-3 text-white">
-            Throwback Anime!
-          </h1>
+          <div className="flex justify-between items-center px-[90px]">
+            <h1 className="font-outfit font-bold text-[34px] py-3 text-white">
+              Throwback Anime!
+            </h1>
+            <input type="search" placeholder="Search Anime..." className="rounded-md pl-4" onChange={(e) => setTbSearch(e.target.value) }/>
+          </div>
 
           <div className="flex flex-nowrap z-0 items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] scroll-pl-[90px] snap-x">
                 {tbdata}
