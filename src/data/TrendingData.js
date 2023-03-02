@@ -9,8 +9,8 @@ export default [
     description:
       "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…",
     season: "1",
-    
   },
+    
   {
     key: 2,
     slug: "jujutsu-kaisen",
@@ -25,7 +25,7 @@ export default [
   {
     key: 3,
     slug: "one-piece",
-    img: "op.png",
+    img: "../CardImages/op.png",
     title: "One Piece",
     rate: "5.0",
     category: "Adventure fiction, Comedy, Family",
@@ -35,7 +35,7 @@ export default [
   {
     key: 4,
     slug: "solo-levelling",
-    img: "sl.png",
+    img: "../CardImages/sl.png",
     title: "Solo Leveling",
     rate: "5.0",
     category: "Action, Fantasy",
@@ -45,7 +45,7 @@ export default [
   {
     key: 5,
     slug: "spy-x-family",
-    img: "sxf.png",
+    img: "../CardImages/sxf.png",
     title: "Spy x Family",
     rate: "5.0",
     category: "Action, Comedy, Spy",

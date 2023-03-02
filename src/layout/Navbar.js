@@ -10,7 +10,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className='flex absolute w-full items-center justify-between z-10 py-[70px] px-[90px] mx-auto text-white'>
+    <nav className='flex absolute w-full items-center justify-between z-30 pt-[70px] px-[90px] mx-auto text-white'>
          <div className="">
             <NavLink to='/'> <h1 className =' font-outfit font-bold text-2xl cursor-pointer'> AnimeBinge </h1> </NavLink>
          </div>
@@ -27,13 +27,14 @@ export const Navbar = () => {
         </ul>
         
         <div onClick={handleNav} className=" block md:hidden mr-0 z-10 ml-auto">
-          {!nav ? <AiOutlineClose size={20} /> :  <AiOutlineMenu size={20}/>}
+                {!nav ? <AiOutlineClose size={20} /> :  <AiOutlineMenu size={20}/>}
         </div>
 
-        <div className={!nav ? 'fixed top-0 left-0 w-full bg-gray-500 rounded-b-3xl' : 'fixed hidden'}>
+        <div className={!nav ? ' absolute top-0 left-0 w-full bg-black rounded-b-3xl' : 'fixed hidden'}>
           <div>
               <h1 className =' font-outfit font-bold text-2xl cursor-pointer pt-[70px] px-[90px]'> AnimeBinge </h1>
           </div>
+
           <ul className=" px-[90px] pt-4">
             <li className=' py-6 border-b border-gray-900 cursor-pointer hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/'> Home </NavLink></li>
             <li className=' py-6 border-b border-gray-900 cursor-pointer hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/discover'> Discover </NavLink></li>

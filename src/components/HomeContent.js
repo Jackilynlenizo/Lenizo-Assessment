@@ -36,11 +36,11 @@ export const HomeContent = () => {
         Trending <span className=" text-[#FBC94A]">this week </span>
       </h1>
 
-        <div className="flex flex-nowrap z-0 items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] scroll-pl-[90px] snap-x">
+        <div className="flex flex-nowrap z-0 items-center space-x-5 overflow-x-auto scrollbar-hide px-[90px] py-4 scroll-pl-[90px] snap-x">
            {trendingdata}
         </div>
 
-      <div className=' pb-10 py-[10px] relative bgcolor'>
+      <div className=' pb-10 relative bgcolor'>
           <h1 className=" px-[90px] font-outfit font-bold text-[34px] py-3 text-white">
             Throwback Anime!
           </h1>
