@@ -8,9 +8,20 @@ export const BannerInfo = () => {
   return (
     <div className='flex flex-col w-full h-[100vh] md:px-[90px] px-[60px] pt-[113px] relative'>
         <div className=' w-full h-screen justify-center text-left flex flex-col text-white'>
-                  <div className=' font-outfit text-[70px] font-bold'>
+                  <motion.div initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                    default: {
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01]},
+                    scale: {
+                    type: "spring",
+                    damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001}}} 
+                  className=' font-outfit text-[70px] font-bold'>
                       Kimetsu no Yaiba
-                  </div>
+                  </motion.div>
 
                   <ul className='flex items-center pb-2'>  
                       <div className=' px-1 font-normal'> <div> <MdStar color="#FBC94A" size={20} /> </div></div>

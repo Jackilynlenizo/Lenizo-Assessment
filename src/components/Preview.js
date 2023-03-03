@@ -34,14 +34,15 @@ export const Preview = () => {
   }, [slug]);
 
   return (
-    <div className=" px-[90px] pr-7 pb-5 z-50">
+    <div className=" px-[90px] pr-7 pb-5 z-50 overflow-x-hidden ">
       <button className=" cursor-pointer font-outfit font-bold text-[34px] text-white flex py-4 gap-2">
         Trending <span className=" text-[#FBC94A]">this week </span>
       </button>
 
-      <div className=" flex flex-col xl:flex-row w-[1430px]">
-        <div className=" ">
-          <button onClick={() => navigate("/")} className="w-[600px] h-[621px] rounded-2xl relative ">
+      <div className=" md:flex grid-cols-2 ">
+        <div className=" md:shrink-0">
+          <button onClick={() => navigate("/")} className="rounded-2xl relative ">
+            <div className="w-[600px] h-[621px]">
             <img
               className="absolute w-full h-full bottom-0 left-0 right-0 rounded-2xl object-cover"
               src={anime?.img}
@@ -64,6 +65,7 @@ export const Preview = () => {
                 </div>
               </ul>
             </div>
+            </div>
           </button>
 
           <div className="w-[600px] text-white flex content-center items-center py-2">
@@ -71,73 +73,14 @@ export const Preview = () => {
           </div>
         </div>
 
-        <div>
-          <div className="text-white overflow-auto h-[691px] scrollbar-default p-2 pt-1">
-            <div className="font-outfit font-medium text-[24px] px-3 flex items-center justify-between">
-              <h1> Episodes</h1>
-              <h1> Season {anime?.season}</h1>
-            </div>
-            {epdata}
-            {/* <div className="flex  items-center px-3 py-5">
-              <div className="rounded-2xl relative">
-                <div className="w-[448px] h-[252px]">
-                  <img
-                    className="absolute w-full h-full rounded-2xl object-cover"
-                    src={img1}
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div className="  font-outfit font-medium text-[20px] px-2 items-left">
-                <h1 className="left-0">Episode 1</h1>
-                <p className="text-[#747474]">
-                  The citizens worry they will be at the Titans' mercy after
-                  many years of peace.
-                </p>
-              </div>
-            </div> */}
-
-              {/* <div className="flex items-center  px-3 py-5">
-                <div className="rounded-2xl relative">
-                  <div className="w-[448px] h-[252px]">
-                    <img
-                      className="absolute w-full h-full rounded-2xl object-cover"
-                      src={img3}
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <div className="  font-outfit font-medium text-[20px] px-2 items-left">
-                  <h1 className="left-0">Episode 2</h1>
-                  <p className="text-[#747474]">
-                    The Shiganshina citizens are under attack from the Titans.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center  px-3 py-5">
-                <div className="rounded-2xl relative">
-                  <div className="w-[448px] h-[252px]">
-                    <img
-                      className="absolute w-full h-full rounded-2xl object-cover"
-                      src={img5}
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <div className="  font-outfit font-medium text-[20px] px-2 items-left">
-                  <h1 className="left-0">Episode 3</h1>
-                  <p className="text-[#747474]">
-                    Eren butt heads with Jean Kirschtein, a cadet who wants to be
-                    in the Military Police Regiment. Berholt and Reiner help Eren
-                    learn during training.
-                  </p>
-                </div>
-              </div> */}
+        <div className="text-white overflow-auto w-full scrollbar-default p-2 pt-1">
+          <div className="font-outfit font-medium text-[24px] px-3 flex items-center justify-between">
+            <h1> Episodes</h1>
+            <h1> Season {anime?.season}</h1>
           </div>
+          {epdata}   
         </div>
+        
       </div>
     </div>
   );

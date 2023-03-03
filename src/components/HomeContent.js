@@ -5,6 +5,7 @@ import TrendingData from "../data/TrendingData";
 import { Throwback } from "./Throwback";
 import ThrowbackData from "../data/ThrowbackData";
 import slugify from "react-slugify";
+import { motion } from "framer-motion";
 
 export const HomeContent = () => {
   const [trSearch, setTrSearch] = useState("")
@@ -40,10 +41,10 @@ export const HomeContent = () => {
 
   return (
     <div className="relative top-0 bgcolor pb-5">
-      <div className="flex justify-between items-center px-[90px]">
-        <h1 className="font-outfit font-bold text-[34px] text-white flex py-4 gap-2">
+      <div className="md:flex justify-between items-center px-[90px] pb-2">
+        <motion.h1 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 15 }} className="font-outfit font-bold text-[34px] text-white flex py-4 gap-2">
           Trending <span className=" text-[#FBC94A]">this week </span>
-        </h1>
+        </motion.h1>
         <input type="search" placeholder="Search Anime..." className="rounded-md pl-4" onChange={(e) => setTrSearch(e.target.value) }/>
       </div>
 
@@ -52,10 +53,10 @@ export const HomeContent = () => {
         </div>
 
       <div className=' pb-10 relative bgcolor'>
-          <div className="flex justify-between items-center px-[90px]">
-            <h1 className="font-outfit font-bold text-[34px] py-3 text-white">
+          <div className="md:flex justify-between items-center px-[90px] pb-2">
+            <motion.h1 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 15 }} className="font-outfit font-bold text-[34px] py-3 text-white">
               Throwback Anime!
-            </h1>
+            </motion.h1>
             <input type="search" placeholder="Search Anime..." className="rounded-md pl-4" onChange={(e) => setTbSearch(e.target.value) }/>
           </div>
 
