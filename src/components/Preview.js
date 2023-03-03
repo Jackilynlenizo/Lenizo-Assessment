@@ -73,7 +73,7 @@ export const Preview = () => {
           </div>
         </div>
 
-        <div className="text-white overflow-auto w-full scrollbar-default p-2 pt-1">
+        <div className="text-white md:h-screen overflow-auto w-full scrollbar-default p-2 pt-1">
           <div className="font-outfit font-medium text-[24px] px-3 flex items-center justify-between">
             <h1> Episodes</h1>
             <h1> Season {anime?.season}</h1>
