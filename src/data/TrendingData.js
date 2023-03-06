@@ -29,8 +29,8 @@ export default [
     title: "One Piece",
     rate: "5.0",
     category: "Adventure fiction, Comedy, Family",
-    description: "This is my awesome placeholder",
-    season: "",
+    description: "One Piece is the story of Monkey D. Luffy, a young man who has a single dream: To find the legendary treasure known as the One Piece and become the King of the Pirates. Alongside a crew of trusted friends, Luffy sails the dangerous seas of the Grand Line to find Laugh Tale, the hidden island containing the One Piece.",
+    season: "1",
   },
   {
     key: 4,
@@ -39,7 +39,7 @@ export default [
     title: "Solo Leveling",
     rate: "5.0",
     category: "Action, Fantasy",
-    description: "lorem ipsum description placeholder",
+    description: "In a world where hunters — human warriors who possess supernatural abilities — must battle deadly monsters to protect mankind from certain annihilation, a notoriously weak hunter named Sung Jinwoo finds himself in a seemingly endless struggle for survival.",
     season: "1",
   },
   {
@@ -49,7 +49,7 @@ export default [
     title: "Spy x Family",
     rate: "5.0",
     category: "Action, Comedy, Spy",
-    description: "placeholder description",
+    description: "Agent Twilight, the greatest spy for the nation of Westalis, has to infiltrate an elite private school. In order to do so he assumes the identity of psychiatrist Loid Forger, adopts an orphan girl, and marries a city hall employee. Unknown to him, his daughter Anya is a telepath and his wife Yor is an assassin.",
     season: "1",
   },
 ];
