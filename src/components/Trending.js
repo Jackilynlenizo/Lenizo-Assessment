@@ -4,7 +4,7 @@ import { MdStar } from "react-icons/md";
 
 export const Trending = (props) => {
   return (
-    <div className="w-[600px] h-[337px] snap-start rounded-2xl z-10 overflow-hidden relative hover:shadow-[0_5px_10px_1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out">
+    <div className="md:w-[600px] md:h-[337px] w-[360px] h-[202px] snap-start rounded-2xl z-10 overflow-hidden relative hover:shadow-[0_5px_10px_1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out">
       <img
         className="absolute w-full h-full bottom-0 left-0 right-0 bg-cover"
         src={`../CardImages/${props.img}`}
