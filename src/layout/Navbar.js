@@ -10,7 +10,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className='flex absolute w-full items-center justify-between z-30 pt-[70px] px-[90px] mx-auto text-white'>
+    <nav className='flex absolute w-full items-center justify-between z-30 pt-[70px] lg:px-[5.625rem] px-[1.5rem] mx-auto text-white'>
          <div className="">
             <NavLink to='/'> <h1 className =' font-outfit font-bold text-2xl cursor-pointer'> AnimeBinge </h1> </NavLink>
          </div>
@@ -32,10 +32,10 @@ export const Navbar = () => {
 
         <div className={!nav ? ' absolute top-0 left-0 w-full bg-black rounded-b-3xl' : 'fixed hidden'}>
           <div>
-              <h1 className =' font-outfit font-bold text-2xl cursor-pointer pt-[70px] px-[90px]'> AnimeBinge </h1>
+              <h1 className =' font-outfit font-bold text-2xl cursor-pointer pt-[70px] lg:px-[5.625rem] px-[1.5rem]'> AnimeBinge </h1>
           </div>
 
-          <ul className=" px-[90px] pt-4">
+          <ul className=" lg:px-[5.625rem] px-[1.5rem] pt-4">
             <li className=' py-6 border-b border-gray-900 cursor-pointer hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/'> Home </NavLink></li>
             <li className=' py-6 border-b border-gray-900 cursor-pointer hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/discover'> Discover </NavLink></li>
             <li className=' py-6 border-b border-gray-900 cursor-pointer hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/about'> About Us </NavLink></li>

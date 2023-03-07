@@ -8,7 +8,7 @@ export const BannerInfo = () => {
 
   
   return (
-    <div className=' flex flex-col w-full h-[100vh] md:px-[90px] px-[60px] pt-[113px] relative'>
+    <div className=' flex flex-col w-full h-[100vh] lg:px-[5.625rem] px-[1.5rem] pt-[7.063rem] relative'>
         <div className=' w-full h-screen justify-center text-left flex flex-col text-white'>
                   <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
@@ -17,7 +17,7 @@ export const BannerInfo = () => {
                   duration: 0.8,
                   delay: 0.5,
                   ease: [0, 0.71, 0.2, 1.01]}} 
-                  className=' font-outfit text-[70px] font-bold'>
+                  className=' font-outfit lg:text-[4.375rem] text-[3rem] font-bold'>
                       Kimetsu no Yaiba
                   </motion.div>
 
@@ -28,7 +28,7 @@ export const BannerInfo = () => {
                   duration: 0.8,
                   delay: 0.5,
                   ease: [0, 0.71, 0.2, 1.01]}}
-                  className='flex items-center pb-2'>  
+                  className='flex items-center pb-2 text-xs'>  
                       <div className=' px-1 font-normal'> <div> <MdStar color="#FBC94A" size={20} /> </div></div>
                       <div className=' font-semibold'> 5.0 </div>
                       <div className=' font-normal pl-4' >Category: Adventure fiction, Dark fantasy, Martial Arts</div>
@@ -41,7 +41,7 @@ export const BannerInfo = () => {
                     duration: 0.8,
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01]}}
-                    className='flex max-w-[622px] font-outfit font-normal'>
+                    className='flex max-w-[622px] font-outfit font-normal text-base'>
                       Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by
                       Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer
                       after his family was slaughtered and his younger sister Nezuko turned into a demon.
@@ -61,7 +61,7 @@ export const BannerInfo = () => {
             </div>
 
             <div className='text-white mb-10'>
-                    <ul className='font-outfit font-thin flex items-center space-x-5 pr-12 cursor-pointer'>
+                    <ul className='font-outfit font-thin flex items-center lg:space-x-5 space-x-1 cursor-pointer'>
                       <li className='hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580]'><NavLink to='/'>Overview</NavLink></li>
                       <li className='hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580] px-4'><NavLink to='/'>Episodes</NavLink></li>
                       <li className='hover:font-bold hover:underline-offset-8 hover:underline hover:decoration-4 hover:decoration-[#106580] '><NavLink to='/'>Details</NavLink></li>

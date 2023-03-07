@@ -34,7 +34,7 @@ export const Preview = () => {
   }, [slug]);
 
   return (
-    <div className=" px-[90px] pr-7 pb-5  overflow-x-hidden ">
+    <div className=" lg:px-[5.625rem] px-[1.5rem] overflow-x-hidden ">
       <button className=" cursor-pointer font-outfit font-bold text-[34px] text-white flex py-4 gap-2">
         Trending <span className=" text-[#FBC94A]">this week </span>
       </button>
@@ -49,16 +49,16 @@ export const Preview = () => {
             <div className="absolute w-full h-full rounded-2xl bottom-0 left-0 right-0 bg-gradient-to-t from-black"></div>
 
             <div className="absolute text-white text-left z-30 bottom-2 w-full px-5">
-              <div className=" font-outfit font-extrabold text-[24px]">
+              <div className=" font-outfit font-extrabold text-2xl">
                 {anime?.title}
               </div>
               <ul className=" font-outfit xl:flex items-center justify-between w-full py-1">
-                <h1 className="font-normal text-[12px] ">{anime?.category}</h1>
+                <h1 className="font-normal text-xs ">{anime?.category}</h1>
                 <div className="flex flex-end items-center">
                   <div>
                     <MdStar color="#FBC94A" size={15} />
                   </div>
-                  <div className=" font-semibold text-[12px]">
+                  <div className=" font-semibold text-xs">
                     {anime?.rate}
                   </div>
                 </div>
@@ -66,13 +66,13 @@ export const Preview = () => {
             </div>
           </button>
 
-          <div className="xl:w-[600px] text-white flex content-center items-center pl-3 py-2">
+          <div className="xl:max-w-[600px] text-white flex content-center items-center pl-3 py-2">
             <p className="text-[#747474] text-justify">{anime?.description}</p>
           </div>
         </div>
 
         <div className="text-white md:h-screen overflow-auto w-full scrollbar-default p-2 pt-1">
-          <div className="font-outfit font-medium text-[24px] flex items-center justify-between">
+          <div className="font-outfit font-medium text-2xl flex items-center justify-between">
             <h1> Episodes</h1>
             <h1> Season {anime?.season}</h1>
           </div>
